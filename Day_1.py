@@ -1,0 +1,18 @@
+import numpy as np
+import cv2
+img = cv2.imread(r"C:\Users\Piyush\Documents\cv images\choice-variation-concept.webp")
+img2 = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+img3 = cv2.cvtColor(img2, cv2.COLOR_RGB2HSV)
+R,G,B = cv2.split(img2)
+Redimg = cv2.merge([np.zeros_like(R), np.zeros_like(G),B]) 
+Greenimg = cv2.merge([np.zeros_like(R), G,np.zeros_like(B)])
+Blueimg = cv2.merge([R, np.zeros_like(G),np.zeros_like(B)])
+cv2.imshow("RGB",img2)
+cv2.imshow("original",img)
+cv2.imshow("HSV",img3)
+cv2.imshow("Red",Redimg)
+cv2.imshow("Green",Greenimg)
+cv2.imshow("Blue",Blueimg)
+cv2.imshow("Merge",cv2.merge([R,G,B]))
+cv2.waitKey(0)
+cv2.destroyAllWindows()
