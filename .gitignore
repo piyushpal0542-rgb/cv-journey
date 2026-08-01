@@ -1,0 +1,22 @@
+Ignore captured images from Week 4
+
+captured_frames/
+
+Ignore log files from Week 4
+
+motion_log.csv
+security_log.csv
+
+Python caches and Virtual Environments
+
+pycache/
+*.pyc
+venv/
+
+Week 5: Ignore massive image datasets
+
+dataset/
+
+Week 5: Ignore heavy trained AI brains
+
+*.keras
