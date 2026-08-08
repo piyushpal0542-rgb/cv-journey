@@ -20,3 +20,9 @@ dataset/
 Week 5: Ignore heavy trained AI brains
 
 *.keras
+
+# Week 6: Ignore YOLO weights
+*.pt
+*.onnx
+3. Save the `.gitignore` file.
+4. Open your terminal, make sure you are in the main `cv_journey` directory (using `cd ..` if you are stuck in `Week6`), and run your commands:
